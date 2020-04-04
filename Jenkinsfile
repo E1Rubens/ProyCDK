@@ -19,7 +19,7 @@ pipeline {
 
     stage('Push Dkr') {
       steps {
-        sh 'docker push e1rubs/conexion:v56'
+        sh 'docker push e1rubs/conexion:v6'
       }
     }
 
