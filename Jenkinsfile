@@ -12,14 +12,14 @@ pipeline {
     stage('Build Dkr') {
       steps {
         sh 'echo \'docker build - t E1Rubens/proyectoCDK:1.0\''
-        sh 'docker build -t e1rubs/conexion:v6 .'
+        sh 'docker build -t e1rubs/conexion:v7 .'
         sh 'docker images'
       }
     }
 
     stage('Push Dkr') {
       steps {
-        sh 'docker push e1rubs/conexion:v6'
+        sh 'docker push e1rubs/conexion:v7'
       }
     }
 
